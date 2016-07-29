@@ -154,6 +154,152 @@ impl<T: Div> Div for Vector3<T> {
     }
 }
 
+
+impl Add<Vector3i> for i32 {
+    type Output = Vector3i;
+
+    fn add(self, rhs: Vector3i) -> Vector3i {
+        Vector3 {
+            x: self + rhs.x,
+            y: self + rhs.y,
+            z: self + rhs.z
+        }
+    }
+}
+
+impl Sub<Vector3i> for i32 {
+    type Output = Vector3i;
+
+    fn sub(self, rhs: Vector3i) -> Vector3i {
+        Vector3 {
+            x: self - rhs.x,
+            y: self - rhs.y,
+            z: self - rhs.z
+        }
+    }
+}
+
+impl Mul<Vector3i> for i32 {
+    type Output = Vector3i;
+
+    fn mul(self, rhs: Vector3i) -> Vector3i {
+        Vector3 {
+            x: self * rhs.x,
+            y: self * rhs.y,
+            z: self * rhs.z
+        }
+    }
+}
+
+impl Div<Vector3i> for i32 {
+    type Output = Vector3i;
+
+    fn div(self, rhs: Vector3i) -> Vector3i {
+        Vector3 {
+            x: self / rhs.x,
+            y: self / rhs.y,
+            z: self / rhs.z
+        }
+    }
+}
+
+impl Add<Vector3u> for u32 {
+    type Output = Vector3u;
+
+    fn add(self, rhs: Vector3u) -> Vector3u {
+        Vector3 {
+            x: self + rhs.x,
+            y: self + rhs.y,
+            z: self + rhs.z
+        }
+    }
+}
+
+impl Sub<Vector3u> for u32 {
+    type Output = Vector3u;
+
+    fn sub(self, rhs: Vector3u) -> Vector3u {
+        Vector3 {
+            x: self - rhs.x,
+            y: self - rhs.y,
+            z: self - rhs.z
+        }
+    }
+}
+
+impl Mul<Vector3u> for u32 {
+    type Output = Vector3u;
+
+    fn mul(self, rhs: Vector3u) -> Vector3u {
+        Vector3 {
+            x: self * rhs.x,
+            y: self * rhs.y,
+            z: self * rhs.z
+        }
+    }
+}
+
+impl Div<Vector3u> for u32 {
+    type Output = Vector3u;
+
+    fn div(self, rhs: Vector3u) -> Vector3u {
+        Vector3 {
+            x: self / rhs.x,
+            y: self / rhs.y,
+            z: self / rhs.z
+        }
+    }
+}
+
+impl Add<Vector3f> for f32 {
+    type Output = Vector3f;
+
+    fn add(self, rhs: Vector3f) -> Vector3f {
+        Vector3 {
+            x: self + rhs.x,
+            y: self + rhs.y,
+            z: self + rhs.z
+        }
+    }
+}
+
+impl Sub<Vector3f> for f32 {
+    type Output = Vector3f;
+
+    fn sub(self, rhs: Vector3f) -> Vector3f {
+        Vector3 {
+            x: self - rhs.x,
+            y: self - rhs.y,
+            z: self - rhs.z
+        }
+    }
+}
+
+impl Mul<Vector3f> for f32 {
+    type Output = Vector3f;
+
+    fn mul(self, rhs: Vector3f) -> Vector3f {
+        Vector3 {
+            x: self * rhs.x,
+            y: self * rhs.y,
+            z: self * rhs.z
+        }
+    }
+}
+
+impl Div<Vector3f> for f32 {
+    type Output = Vector3f;
+
+    fn div(self, rhs: Vector3f) -> Vector3f {
+        Vector3 {
+            x: self / rhs.x,
+            y: self / rhs.y,
+            z: self / rhs.z
+        }
+    }
+}
+
+
 impl Raw for Vector3f {
     type Raw = ::csfml_system_sys::sfVector3f;
 
